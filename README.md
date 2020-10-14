@@ -1,7 +1,7 @@
 # DirectX11_Triangles_Renderer
 A simple program that use DirectX11 to render triangles with texture
 
-![Screenshot](DX11_preview_image.png)
+![Screenshot](DX11_preview_image.PNG)
 
 About the program
 ==============
