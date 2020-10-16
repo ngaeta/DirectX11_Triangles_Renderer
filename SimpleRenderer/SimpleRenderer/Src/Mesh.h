@@ -23,7 +23,6 @@ public:
 
 	Buffer& GetVBuffer() { return vertexBuffer; }
 	Buffer& GetIBuffer() { return indexBuffer; }
-	const uint32_t GetVerticesDataSize() const { return vertexBuffer.GetSize(); }
 	const uint32_t GetVerticesIndexesSize() const { return indexBuffer.GetSize(); }
 	const Texture& GetTexture() const { return texture; }
 	const glm::highp_mat4 GetModel() const { return position * rotation * scale; }

@@ -14,7 +14,7 @@ public:
 	void SetConstantBuffer(const Context& context, Buffer& buffer) override;
 	void SetShaderResources(const Context& context, const IShaderResource& resource) const override;
 
-	const ComPtr<ID3D11SamplerState> GetSampler() const { return sampler; }
+	ID3D11SamplerState* const* GetSamplerAddress() const { return sampler.GetAddressOf(); }
 
 private:
 	ComPtr<ID3D11SamplerState> sampler;

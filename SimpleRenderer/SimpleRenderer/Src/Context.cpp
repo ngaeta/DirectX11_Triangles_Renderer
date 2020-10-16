@@ -51,7 +51,7 @@ void Context::ClearRenderTargetView(const std::array<float, 4>& color) const
 void Context::SetPixelShader(PixelShader& pixelShader) const
 {
 	context->PSSetShader(pixelShader.GetShaderPtr(), nullptr, 0);
-	context->PSSetSamplers(0, 1, pixelShader.GetSampler().GetAddressOf());
+	context->PSSetSamplers(0, 1, pixelShader.GetSamplerAddress());
 }
 
 void Context::RenderMesh(Mesh& mesh) const
